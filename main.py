@@ -6,10 +6,10 @@ total = 0
 for key,value in menu.items():
     print(f"{key:10} : {value:.2f}")
 
-print("What would you like to order")
+print("What would you like to order? ", end = ' ')
 while True:
     item = input()
-    print("is there anything else you'd like to order?")
+    print("is there anything else you'd like to order? ", end = '')
     if 'no' in item or 'na' in item:
         print(f"\nthank you for shopping at the mj consession store\n\n-------------------------------\n\tYour total is ${total}/- \n-------------------------------\n")
         break
