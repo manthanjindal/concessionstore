@@ -1,8 +1,10 @@
 menu = {"pizza":3.00,"nachos":4.50,"popcorn": 6.00,"fries": 2.50,"chips": 1.00,"pretzel":3.50,"soda": 3.00,"lemonade": 4.25}
 
 def print_menu():
+    print("+---------------------------------+\n\t     -MENU-\n")
     for key,value in menu.items():
-        print(f"{key:10} : {value:.2f}")
+        print(f"\t{key:10} : {value:.2f}")
+    print("\n+---------------------------------+")
 
 def get_order():
     cart = []
@@ -25,7 +27,7 @@ def main():
     print_menu()
 
     cart, total = get_order()
-    print(f"\nthank you for shopping at the mj consession store\n\n-------------------------------\n\tYour total is ${total}/- \n-------------------------------\n")
+    print(f"\nthank you for shopping at the mj consession store\n\n|----------------------------------|\n\tYour total is ${total}/- \n|----------------------------------|\n")
 
 
 main()
